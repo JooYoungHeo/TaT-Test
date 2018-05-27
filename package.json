@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "HeoJooYoung",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "jimp": "^0.2.28"
+  }
 }
