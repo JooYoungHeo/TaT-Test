@@ -8,10 +8,10 @@ const dirName = 'images';
 const fileList = fs.readdirSync(dirName);
 const thumbName = 'thumbs';
 
-for (let i = 0, p = Promise.resolve() ; i < fileList.length ; i++) {
+for (let i = 0, p = Promise.resolve() ; i < 1000 ; i++) {
 	
 	p = p.then(() => new Promise(resolve => {
-		let imageFile = fileList[i];
+		let imageFile = fileList[1];
 		let imagePath = path.join(dirName, imageFile);
 		let fileStat = fs.statSync(imagePath);
 		let fileSize = fileStat['size'] / 1024;
